@@ -31,8 +31,7 @@ def calculadora():
             <label>N2:</label>
             <input type="text" name="num2"/></br></br>
             <input type="radio" name="operacion" value="suma"> SUMA <br>
-            <input type="radio" name="operacion" 
-            value="resta"> RESTA <br>
+            <input type="radio" name="operacion" value="resta"> RESTA <br>
             <input type="radio" name="operacion" value="multiplicacion"> MULTIPLICACIÓN <br>
             <input type="radio" name="operacion" value="division"> DIVISION <br>
             <input type="submit" value="Calcular"/>
