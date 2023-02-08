@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinepolís</title>
+    <link rel="stylesheet" href="../static/css/hojaEstilo.css">
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap-responsive.min.css">
+</head>
+
+<body>
+    <form action="/" method="POST">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span4"> 
+                    <h3 style="color: white;" class="text-center">
+                        Entradas
+                    </h3>
+                    <label for="txtNombre" style="color: white;">
+                        Nombre:
+                    </label>
+                    <input type="text" name="txtNombre" id="txtNombre">
+                    <label for="txtCantidadCompradores" style="color: white;">
+                        Cantidad de compradores:
+                    </label>
+                    <input type="text" name="txtCantidadCompradores" id="txtCantidadCompradores">
+                    <label for="txtTarjeta" style="color: white;">
+                        Tarjeta CINECO:
+                    </label>
+                    <input type="radio" name="tarjeta" value="si"> SI
+                    <br>
+                    <input type="radio" name="tarjeta" value="no"> NO
+                    <label for="txtCantidadBoletos" style="color: white;">
+                        Cantidad Boletos:
+                    </label>
+                    <input type="text" name="txtCantidadBoletos" id="txtCantidadBoletos">
+                </div>
+                <div class="span4">
+                    <h3 style="color: white;" class="text-center">
+                        Acciones
+                    </h3>
+                    <input type="submit" value="PROCESAR" style="background-color: white; color: black;">
+                    <input type="submit" value="SALIR" style="background-color: white; color: black;">
+                </div>
+                <div class="span4">
+                    <h3 style="color: white;" class="text-center">
+                        Salidas
+                    </h3>
+                    <label for="txtTotal" style="color: white;">
+                        Valor a pagar:
+                    </label>
+                    <textarea name="txtTotal" id="txtTotal" cols="10" rows="3" readonly>
+                        {{txtTotal}}
+                    </textarea>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

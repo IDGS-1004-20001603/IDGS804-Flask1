@@ -1,0 +1,11 @@
+body {
+    background-image: url('../img/download.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.span4 {
+    border-style: solid;
+    border-color: white;
+}
