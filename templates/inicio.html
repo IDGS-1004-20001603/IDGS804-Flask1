@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Personales</title>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap-responsive.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12">
+                <h1 class="text-center">
+                    Datos personales
+                </h1>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="span12">
+                <form action="/examen" method="post">
+                    <label for="txtNombre">
+                        Nombre:
+                    </label>
+                    <input type="text" name="txtNombre" id="txtNombre">
+                    <label for="txtApaterno">
+                        Apellido Paterno:
+                    </label>
+                    <input type="text" name="txtApaterno" id="txtApaterno">
+                    <label for="txtAmaterno">
+                        Apellido Materno:
+                    </label>
+                    <input type="text" name="txtAmaterno" id="txtAmaterno">
+                    <label for="lblFecha">
+                        Fecha de nacimiento
+                    </label>
+                    <div class="row-fluid">
+                        <div class="span4">
+                            <label for="txtDia">
+                                Dia:
+                            </label>
+                            <input type="number" name="txtDia" id="txtDia" size="2">
+                        </div>
+                        <div class="span4">
+                            <label for="txtMes">
+                                Mes:
+                            </label>
+                            <input type="number" name="txtMes" id="txtMes">
+                        </div>
+                        <div class="span4">
+                            <label for="txtAnio">
+                                Año:
+                            </label>
+                            <input type="number" name="txtAnio" id="txtAnio">
+                        </div>
+                    </div>
+                    <label for="lblSexo">
+                        Sexo
+                    </label>
+                    <input type="radio" name="rbtSexo" id="M"> Masculino
+                    <br>
+                    <input type="radio" name="rbtSexo" id="F"> Femenino
+
+                    <br>
+                    <input type="submit" value="Siguiente">
+                </form>
+                <form action="/" method="get">
+                    <button type="submit">
+                        Limpiar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap-responsive.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12">
+                <h1 class="text-center">
+                    Examen
+                </h1>
+            </div>
+            <form action="/resultados" method="post">
+                <h2>
+                    Pregunta #1
+                </h2>
+                <label for="Q#1">
+                    Cual es la capital de Francia?
+                </label>
+                <input type="radio" name="q#1" value="a"> Paris
+                <input type="radio" name="q#1" value="b"> Madrid
+                <input type="radio" name="q#1" value="c"> Buenos Aires
+                <input type="radio" name="q#1" value="d"> CDMX
+                <br>
+                <h2>
+                    Pregunta #2
+                </h2>
+                <label for="Q#2">
+                    Cual es el resulado de 4^3 ?
+                </label>
+                <input type="radio" name="q#2" value="a"> 12
+                <input type="radio" name="q#2" value="b"> 64
+                <input type="radio" name="q#2" value="c"> 16
+                <input type="radio" name="q#2" value="d"> 24
+                <br>
+                <h2>
+                    Pregunta #3
+                </h2>
+                <label for="Q#3">
+                    Cual es el resultado de raiz cuadrada de 121
+                </label>
+                <input type="radio" name="q#3" value="a"> 11
+                <input type="radio" name="q#3" value="b"> 10
+                <input type="radio" name="q#3" value="c"> 13
+                <input type="radio" name="q#3" value="d"> 12
+                <br>
+                <h2>
+                    Pregunta #4
+                </h2>
+                <label for="Q#4">
+                    Cual es la capital de Uruguay
+                </label>
+                <input type="radio" name="q#4" value="a"> La Paz
+                <input type="radio" name="q#4" value="b"> Caracas
+                <input type="radio" name="q#4" value="c"> Montevideo
+                <input type="radio" name="q#4" value="d"> Toronto
+                <br>
+                <br>
+                <input type="submit" value="Terminar">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

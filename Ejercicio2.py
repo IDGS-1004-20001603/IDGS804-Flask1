@@ -1,6 +1,5 @@
 from flask import Flask, render_template
 from flask import request
-import math
 
 app = Flask(__name__)
 
@@ -22,8 +21,10 @@ def puntos():
             elif(boletos <= 2):
                 totalConDescuento = total
             
+            print(totalConDescuento)
+            
             if(tarjeta == "si"):
-                txtTotal = totalConDescuento * .10
+                txtTotal = totalConDescuento * .90
             elif(tarjeta == "no"):
                 txtTotal = totalConDescuento
             
